@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Oswald:wght@400;500&family=Ruda:wght@400;700;900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Brilliance</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top-section">
+          <div class="container">
+            <div class="header__inner">
+              <div class="menu-btn">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+              </div>
+              <a href="./index.html" class="logo | ref-no-lh">
+                <img
+                  class="logo__img"
+                  src="./img/logo.svg"
+                  alt="Brilliance logo"
+                />
+              </a>
+
+              <ul class="header__icons">
+                <li class="header_icons-item mobile-hidden">
+                  <a class="icon icon-sign-in" href="#">
+                    <svg
+                      class="icon__svg"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="icon__path"
+                        d="M12 2C14.757 2 17 4.243 17 7.001C17 9.757 14.757 12.001 12 12.001C9.243 12.001 7 9.757 7 7.001C7 4.243 9.243 2 12 2ZM12 0C8.134 0 5 3.134 5 7.001C5 10.866 8.134 14.001 12 14.001C15.866 14.001 19 10.866 19 7.001C19 3.134 15.866 0 12 0ZM18.369 13.353C17.872 13.851 17.312 14.284 16.711 14.655C19.583 16.529 21.089 19.738 21.683 22.001H2.296C2.868 19.711 4.354 16.498 7.269 14.643C6.666 14.269 6.107 13.832 5.611 13.331C1.353 16.403 0 21.837 0 24H24C24 21.858 22.56 16.443 18.369 13.353Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header_icons-item mobile-hidden">
+                  <a class="icon icon-favorite" href="#">
+                    <svg
+                      class="icon__svg"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="icon__path"
+                        d="M6.28 2.18182C9.516 2.18291 11.253 5.99018 12 7.67018C12.75 5.98255 14.469 2.19273 17.726 2.19273C19.784 2.19273 22 3.62073 22 6.75491C22 10.5098 17.256 15.3196 12 20.9367C6.742 15.3175 2 10.5087 2 6.75491C2 3.83564 3.965 2.18073 6.28 2.18182ZM6.281 0C3.098 0 0 2.38582 0 6.75491C0 11.8396 5.57 17.0389 12 24C18.43 17.0389 24 11.8396 24 6.75491C24 2.37927 20.903 0.0109091 17.726 0.0109091C15.522 0.0109091 13.28 1.14764 12 3.54327C10.715 1.13673 8.478 0 6.281 0Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="header_icons-item">
+                  <a class="icon icon-cart" href="#">
+                    <svg
+                      class="icon__svg"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        class="icon__path"
+                        d="M21.6 7H16.8V4C16.8 1.791 14.6508 0 12 0C9.3492 0 7.2 1.791 7.2 4V7H2.4L0 24H24L21.6 7ZM8.4 4C8.4 2.346 10.0152 1 12 1C13.9848 1 15.6 2.346 15.6 4V7H8.4V4ZM2.6988 22L4.5336 9H7.2V10.5C7.2 10.776 7.4688 11 7.8 11C8.1312 11 8.4 10.776 8.4 10.5V9H15.6V10.5C15.6 10.776 15.8688 11 16.2 11C16.5312 11 16.8 10.776 16.8 10.5V9H19.4664L21.3012 22H2.6988Z"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="header__bottom-section">
+          <div class="container">
+            <div class="header__inner header__inner_bottom">
+              <nav class="menu">
+                <ul class="menu__list">
+                  <li class="menu__list-item">
+                    <div class="menu__list-link-wrapper">
+                      <a href="#" class="menu__list-link"
+                        >Чайная и кофейная посуда</a
+                      >
+                      <div class="menu__mobile-arrow"></div>
+                    </div>
+                    <ul class="menu__list-lvl-2">
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайные и кофейные наборы</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайники заварочные</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чашки и блюдца</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Сахарницы</a>
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Конфетницы</a>
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Молочники</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__list-item">
+                    <div class="menu__list-link-wrapper">
+                      <a href="#" class="menu__list-link">Тарелки</a>
+                      <div class="menu__mobile-arrow"></div>
+                    </div>
+                    <ul class="menu__list-lvl-2">
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайные и кофейные наборы</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайники заварочные</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чашки и блюдца</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__list-item">
+                    <div class="menu__list-link-wrapper">
+                      <a href="#" class="menu__list-link"
+                        >Посуда для сервировки стола</a
+                      >
+                      <div class="menu__mobile-arrow"></div>
+                    </div>
+                    <ul class="menu__list-lvl-2">
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайные и кофейные наборы</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайники заварочные</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чашки и блюдца</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Сахарницы</a>
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Конфетницы</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__list-item">
+                    <div class="menu__list-link-wrapper">
+                      <a href="#" class="menu__list-link">Столовые приборы</a>
+                      <div class="menu__mobile-arrow"></div>
+                    </div>
+                    <ul class="menu__list-lvl-2">
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайные и кофейные наборы</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайники заварочные</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чашки и блюдца</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Сахарницы</a>
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Конфетницы</a>
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2">Молочники</a>
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чашки и блюдца</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="menu__list-item">
+                    <div class="menu__list-link-wrapper">
+                      <a href="#" class="menu__list-link">Текстиль для кухни</a>
+                      <div class="menu__mobile-arrow"></div>
+                    </div>
+                    <ul class="menu__list-lvl-2">
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайные и кофейные наборы</a
+                        >
+                      </li>
+                      <li class="menu__list-item-lvl-2">
+                        <a href="#" class="menu__list-link-lvl-2"
+                          >Чайники заварочные</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="menu-extra">
+                  <ul class="menu-extra__sections">
+                    <li class="menu-extra__sections-item menu-extra__indented">
+                      <a href="#" class="menu-extra__sections-link"
+                        >Популярные товары</a
+                      >
+                    </li>
+                    <li class="menu-extra__sections-item menu-extra__indented">
+                      <a href="#" class="menu-extra__sections-link">Новинки</a>
+                    </li>
+                    <li class="menu-extra__sections-item menu-extra__indented">
+                      <a href="#" class="menu-extra__sections-link"
+                        >Акционные товары</a
+                      >
+                    </li>
+                  </ul>
+
+                  <ul class="menu-extra__hrefs">
+                    <li class="menu-extra__hrefs-item menu-extra__indented">
+                      <a
+                        class="icon icon-main menu-extra__icon"
+                        href="https://google.com"
+                      >
+                        <svg
+                          class="icon__svg icon__svg_stroke"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="icon__path"
+                            d="M12 1.35317L21.4187 9.93954H21V10.9395V23H15.875V15.293V14.293H14.875H9.125H8.125V15.293V23H3V10.9395V9.93954H2.58128L12 1.35317Z"
+                          />
+                        </svg>
+                      </a>
+                      <span class="menu-extra__hrefs-text">Главная</span>
+                    </li>
+                    <li class="menu-extra__hrefs-item menu-extra__indented">
+                      <a class="icon icon-sign-in menu-extra__icon" href="#">
+                        <svg
+                          class="icon__svg"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="icon__path"
+                            d="M12 2C14.757 2 17 4.243 17 7.001C17 9.757 14.757 12.001 12 12.001C9.243 12.001 7 9.757 7 7.001C7 4.243 9.243 2 12 2ZM12 0C8.134 0 5 3.134 5 7.001C5 10.866 8.134 14.001 12 14.001C15.866 14.001 19 10.866 19 7.001C19 3.134 15.866 0 12 0ZM18.369 13.353C17.872 13.851 17.312 14.284 16.711 14.655C19.583 16.529 21.089 19.738 21.683 22.001H2.296C2.868 19.711 4.354 16.498 7.269 14.643C6.666 14.269 6.107 13.832 5.611 13.331C1.353 16.403 0 21.837 0 24H24C24 21.858 22.56 16.443 18.369 13.353Z"
+                          />
+                        </svg>
+                      </a>
+                      <span class="menu-extra__hrefs-text"
+                        >Войти или зарегистрироваться</span
+                      >
+                    </li>
+                    <li class="menu-extra__hrefs-item menu-extra__indented">
+                      <a class="icon icon-search menu-extra__icon" href="#">
+                        <svg
+                          class="icon__svg"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="icon__path"
+                            d="M21.172 24L13.785 16.613C12.397 17.487 10.761 18 9 18C4.029 18 0 13.971 0 9C0 4.029 4.029 0 9 0C13.971 0 18 4.029 18 9C18 10.761 17.486 12.398 16.613 13.785L24 21.172L21.172 24ZM9 16C12.859 16 16 12.86 16 9C16 5.14 12.859 2 9 2C5.141 2 2 5.14 2 9C2 12.86 5.141 16 9 16Z"
+                          />
+                        </svg>
+                      </a>
+                      <span class="menu-extra__hrefs-text">Поиск</span>
+                    </li>
+                    <li class="menu-extra__hrefs-item menu-extra__indented">
+                      <a class="icon icon-favorite menu-extra__icon" href="#">
+                        <svg
+                          class="icon__svg"
+                          viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            class="icon__path"
+                            d="M6.28 2.18182C9.516 2.18291 11.253 5.99018 12 7.67018C12.75 5.98255 14.469 2.19273 17.726 2.19273C19.784 2.19273 22 3.62073 22 6.75491C22 10.5098 17.256 15.3196 12 20.9367C6.742 15.3175 2 10.5087 2 6.75491C2 3.83564 3.965 2.18073 6.28 2.18182ZM6.281 0C3.098 0 0 2.38582 0 6.75491C0 11.8396 5.57 17.0389 12 24C18.43 17.0389 24 11.8396 24 6.75491C24 2.37927 20.903 0.0109091 17.726 0.0109091C15.522 0.0109091 13.28 1.14764 12 3.54327C10.715 1.13673 8.478 0 6.281 0Z"
+                          />
+                        </svg>
+                      </a>
+                      <span class="menu-extra__hrefs-text">Избранное</span>
+                    </li>
+                  </ul>
+
+                  <div class="socials">
+                    <p class="socials__text">
+                      Следите за нами в социальных сетях
+                    </p>
+                    <ul class="socials__list">
+                      <li class="socials__item">
+                        <a href="#" class="icon">
+                          <svg
+                            class="icon__svg"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="icon__path"
+                              d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0V0Z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <a href="#" class="icon">
+                          <svg
+                            class="icon__svg"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="icon__path"
+                              d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163V2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0V0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+              <a class="icon icon-search mobile-hidden" href="#">
+                <svg
+                  class="icon__svg"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    class="icon__path"
+                    d="M21.172 24L13.785 16.613C12.397 17.487 10.761 18 9 18C4.029 18 0 13.971 0 9C0 4.029 4.029 0 9 0C13.971 0 18 4.029 18 9C18 10.761 17.486 12.398 16.613 13.785L24 21.172L21.172 24ZM9 16C12.859 16 16 12.86 16 9C16 5.14 12.859 2 9 2C5.141 2 2 5.14 2 9C2 12.86 5.141 16 9 16Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main"></main>
+
+      <footer class="footer | section">
+        <div class="container">
+          <ul class="footer__menu">
+            <li class="footer__menu-item">
+              <h4 class="footer__menu-title">Компания</h4>
+              <ul class="footer__menu-lvl-2">
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">О компании</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Новости</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Отзывы</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Блог</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Вакансии</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Контакты</a>
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item">
+              <h4 class="footer__menu-title">Информация</h4>
+              <ul class="footer__menu-lvl-2">
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Оплата и доставка</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link"
+                    >Возврат и обмен товара</a
+                  >
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link"
+                    >Подарочные сертификаты</a
+                  >
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link">Программа лояльности</a>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <a href="#" class="footer__menu-link"
+                    >Пользовательское соглашение</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="footer__menu-item footer__flexible-item">
+              <h4 class="footer__menu-title">Подписывайтесь</h4>
+              <ul class="footer__menu-lvl-2">
+                <li class="footer__menu-item-lvl-2">
+                  <form class="footer__subscribe" method="post" target="_blank">
+                    <label class="footer__subscribe-text" for="email"
+                      >Узнавайте первыми об акциях и новых поступлениях</label
+                    >
+                    <div class="footer__subscribe-wrapper">
+                      <input
+                        class="footer__subscribe-input"
+                        type="email"
+                        name="subscription"
+                        id="email"
+                        placeholder="Введите e-mail"
+                      />
+                      <button class="footer__subscribe-btn" type="submit">
+                        Отправить
+                      </button>
+                    </div>
+                  </form>
+                </li>
+                <li class="footer__menu-item-lvl-2">
+                  <div class="socials footer__socials">
+                    <p class="socials__text">
+                      Следите за нами в социальных сетях
+                    </p>
+                    <ul class="socials__list footer__socials-list">
+                      <li class="socials__item">
+                        <a href="#" class="icon">
+                          <svg
+                            class="icon__svg"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="icon__path"
+                              d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0V0Z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                      <li class="socials__item">
+                        <a href="#" class="icon">
+                          <svg
+                            class="icon__svg"
+                            viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              class="icon__path"
+                              d="M12 2.163C15.204 2.163 15.584 2.175 16.85 2.233C20.102 2.381 21.621 3.924 21.769 7.152C21.827 8.417 21.838 8.797 21.838 12.001C21.838 15.206 21.826 15.585 21.769 16.85C21.62 20.075 20.105 21.621 16.85 21.769C15.584 21.827 15.206 21.839 12 21.839C8.796 21.839 8.416 21.827 7.151 21.769C3.891 21.62 2.38 20.07 2.232 16.849C2.174 15.584 2.162 15.205 2.162 12C2.162 8.796 2.175 8.417 2.232 7.151C2.381 3.924 3.896 2.38 7.151 2.232C8.417 2.175 8.796 2.163 12 2.163V2.163ZM12 0C8.741 0 8.333 0.014 7.053 0.072C2.695 0.272 0.273 2.69 0.073 7.052C0.014 8.333 0 8.741 0 12C0 15.259 0.014 15.668 0.072 16.948C0.272 21.306 2.69 23.728 7.052 23.928C8.333 23.986 8.741 24 12 24C15.259 24 15.668 23.986 16.948 23.928C21.302 23.728 23.73 21.31 23.927 16.948C23.986 15.668 24 15.259 24 12C24 8.741 23.986 8.333 23.928 7.053C23.732 2.699 21.311 0.273 16.949 0.073C15.668 0.014 15.259 0 12 0V0ZM12 5.838C8.597 5.838 5.838 8.597 5.838 12C5.838 15.403 8.597 18.163 12 18.163C15.403 18.163 18.162 15.404 18.162 12C18.162 8.597 15.403 5.838 12 5.838ZM12 16C9.791 16 8 14.21 8 12C8 9.791 9.791 8 12 8C14.209 8 16 9.791 16 12C16 14.21 14.209 16 12 16ZM18.406 4.155C17.61 4.155 16.965 4.8 16.965 5.595C16.965 6.39 17.61 7.035 18.406 7.035C19.201 7.035 19.845 6.39 19.845 5.595C19.845 4.8 19.201 4.155 18.406 4.155Z"
+                            />
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__copyright">&copy; 2021. Все права защищены</div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/slider.js"></script>
+      <script src="./js/add-to-favorite.js"></script>
+    </div>
+  </body>
+</html>

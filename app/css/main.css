@@ -274,6 +274,14 @@ a {
   left: 0;
 }
 
+/* MAIN */
+.main {
+  border-top: 1px solid #000;
+}
+.main__no-top {
+  border-top: unset;
+}
+
 /* HEADER */
 .header {
   margin-top: 12px;
@@ -841,5 +849,3 @@ a {
     font-size: 18px;
   }
 }
-
-/*# sourceMappingURL=main.css.map */
