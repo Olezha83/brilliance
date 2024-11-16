@@ -32,6 +32,19 @@
   }
 }
 
+@mixin expand-arrow($color) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  @if $color == dark {
+    border-top: 6px solid $darkgray;
+  } @else if $color == light {
+    border-top: 6px solid $gray;
+  }
+}
+
 @mixin border-top {
   border-top: 1px solid $black;
 }
