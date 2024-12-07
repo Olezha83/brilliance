@@ -737,6 +737,96 @@ a {
     row-gap: 60px;
   }
 
+  &__filter {
+    font-family: $narrow;
+    @include flex-column;
+    gap: 15px;
+    color: $darkgray;
+  }
+
+  &__price {
+    &-inputs {
+      @include flex-space-between;
+      color: $gray;
+    }
+
+    &-input input {
+      font: {
+        family: $narrow;
+        size: $small;
+      }
+      font-family: $narrow;
+      width: 65px;
+      height: 36px;
+      border: 1px solid $gray;
+      vertical-align: text-bottom;
+    }
+
+    &-range {
+      position: relative;
+      height: 27px;
+
+      &-fill {
+        height: 4px;
+        background: $hover;
+        position: absolute;
+        top: 12px;
+        width: 100%;
+        z-index: 5;
+        pointer-events: none;
+      }
+
+      &-slider {
+        margin: 0;
+        width: 100%;
+        -webkit-appearance: none;
+        appearance: none;
+        background: transparent;
+        position: absolute;
+        left: 0;
+        top: 12px;
+        cursor: pointer;
+
+        &::-webkit-slider-runnable-track {
+          height: 4px;
+          background-color: $lightgray;
+        }
+
+        &::-moz-range-track {
+          height: 4px;
+          background-color: $lightgray;
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 4px;
+          height: 20px;
+          background-color: $hover;
+          margin-top: -8px;
+          position: relative;
+          z-index: 10;
+        }
+
+        &::-moz-range-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 4px;
+          height: 20px;
+          background-color: $hover;
+          border: none;
+          border-radius: 0;
+          position: relative;
+          z-index: 10;
+        }
+      }
+
+      &-values {
+        @include flex-space-between;
+      }
+    }
+  }
+
   &__filters-sort  {
     grid-column: span 3;
     font: {
@@ -750,7 +840,7 @@ a {
     padding-bottom: 4px;
   }
 
-  &__filter {
+  &__filter-on {
     color: $gray;
     display: inline-flex;
     align-items: baseline;

@@ -378,14 +378,52 @@
       <main class="main">
         <div class="container">
           <div class="gallery">
-            <aside class="gallery__filters">FILTERS</aside>
+            <aside class="gallery__filters">
+              <div class="gallery__filter">
+                <div class="gallery__filter-type">Цена</div>
+                <div class="gallery__price-inputs">
+                  <div class="gallery__price-input">
+                    <input type="text" class="gallery__price-field-min">
+                    <span>грн</span>
+                  </div>
+                  <div class="gallery__price-input">
+                    <input type="text" class="gallery__price-field-max">
+                    <span>грн</span>
+                  </div>
+                </div>
+                <div class="gallery__price-range">
+                  <div class="gallery__price-range-fill"></div>
+
+                  <input 
+                    class="gallery__price-range-slider"
+                    type="range"
+                    min="0"
+                    max="39600"
+                    value="0"
+                  />
+
+                  <input 
+                    class="gallery__price-range-slider"
+                    type="range"
+                    min="0"
+                    max="39600"
+                    value="39600"
+                  />
+                </div>
+                <div class="gallery__price-range-values">
+                  <div class="gallery__price-range-value-min">0 грн</div>
+                  <div class="gallery__price-range-value-max">39600 грн</div>
+                </div>
+
+              </div>
+            </aside>
             <div class="gallery__head">
               <div class="structure-path">Главная / Чайная и кофейная посуда / Чайные и кофейные наборы</div>
               <h2 class="section-title_left">Чайные и кофейные наборы</h2>
             </div>
             <div class="gallery__filters-sort">
               <div class="gallery__filters-on">
-                <div class="gallery__filter">
+                <div class="gallery__filter-on">
                   <span class="gallery__filter-applied">Белый</span>
                   <span class="gallery__remove-filter"></span>
                 </div>
