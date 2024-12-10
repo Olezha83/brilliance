@@ -18,12 +18,27 @@ const rangeFill = gallery
 // Input elements' references
 const inputElements = gallery
   .querySelectorAll('.gallery__price-range-slider');
-
 const minInput = inputElements[0]
 const maxInput = inputElements[1]
 
 // Calculate total range width
 const totalRangeWidth = inputElements[0].max - inputElements[0].min
+
+// Set top input range slider
+function mouseMoveHandler (event) {
+  event.offsetX < (this.clientWidth / 2)
+  ? minInput.classList.add('gallery__price-range-slider_top')
+  : minInput.classList.remove('gallery__price-range-slider_top')
+}
+
+inputsContainer.addEventListener('mousemove', mouseMoveHandler)
+
+inputElements.forEach((elem) => {
+  elem.addEventListener('input', () => 
+    inputsContainer.removeEventListener('mousemove', mouseMoveHandler))
+  elem.addEventListener('change', () => 
+    inputsContainer.addEventListener('mousemove', mouseMoveHandler))
+})
 
 // Set min value not bigger then max value
 minInput.addEventListener('input', function () {

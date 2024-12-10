@@ -760,6 +760,14 @@ a {
       height: 36px;
       border: 1px solid $gray;
       vertical-align: text-bottom;
+
+      &::-webkit-inner-spin-button,
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      
+      -moz-appearance: textfield;
     }
 
     &-range {
@@ -772,7 +780,7 @@ a {
         position: absolute;
         top: 12px;
         width: 100%;
-        z-index: 5;
+        z-index: 10;
         pointer-events: none;
       }
 
@@ -784,11 +792,16 @@ a {
         background: transparent;
         position: absolute;
         left: 0;
-        top: 12px;
+        top: 5px;
         cursor: pointer;
+
+        &_top {
+          z-index: 5;
+        }
 
         &::-webkit-slider-runnable-track {
           height: 4px;
+          margin-top: 7px;
           background-color: $lightgray;
         }
 
@@ -805,7 +818,7 @@ a {
           background-color: $hover;
           margin-top: -8px;
           position: relative;
-          z-index: 10;
+          z-index: 15;
         }
 
         &::-moz-range-thumb {
@@ -817,7 +830,7 @@ a {
           border: none;
           border-radius: 0;
           position: relative;
-          z-index: 10;
+          z-index: 15;
         }
       }
 

@@ -674,6 +674,11 @@ a {
   height: 36px;
   border: 1px solid #8b8c8d;
   vertical-align: text-bottom;
+  -moz-appearance: textfield;
+}
+.gallery__price-input input::-webkit-inner-spin-button, .gallery__price-input input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 .gallery__price-range {
   position: relative;
@@ -685,7 +690,7 @@ a {
   position: absolute;
   top: 12px;
   width: 100%;
-  z-index: 5;
+  z-index: 10;
   pointer-events: none;
 }
 .gallery__price-range-slider {
@@ -696,11 +701,15 @@ a {
   background: transparent;
   position: absolute;
   left: 0;
-  top: 12px;
+  top: 5px;
   cursor: pointer;
+}
+.gallery__price-range-slider_top {
+  z-index: 5;
 }
 .gallery__price-range-slider::-webkit-slider-runnable-track {
   height: 4px;
+  margin-top: 7px;
   background-color: #e4e4e4;
 }
 .gallery__price-range-slider::-moz-range-track {
@@ -715,7 +724,7 @@ a {
   background-color: #8a2be2;
   margin-top: -8px;
   position: relative;
-  z-index: 10;
+  z-index: 15;
 }
 .gallery__price-range-slider::-moz-range-thumb {
   -webkit-appearance: none;
@@ -726,7 +735,7 @@ a {
   border: none;
   border-radius: 0;
   position: relative;
-  z-index: 10;
+  z-index: 15;
 }
 .gallery__price-range-values {
   display: flex;
