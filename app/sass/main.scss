@@ -755,7 +755,6 @@ a {
         family: $narrow;
         size: $small;
       }
-      font-family: $narrow;
       width: 65px;
       height: 36px;
       border: 1px solid $gray;
@@ -771,71 +770,50 @@ a {
     }
 
     &-range {
-      position: relative;
-      height: 27px;
+      &-slider{
+        position: relative;
+        height: 20px;
+      }
 
       &-fill {
         height: 4px;
-        background: $hover;
-        position: absolute;
-        top: 12px;
-        width: 100%;
-        z-index: 10;
-        pointer-events: none;
-      }
-
-      &-slider {
-        margin: 0;
-        width: 100%;
-        -webkit-appearance: none;
-        appearance: none;
-        background: transparent;
+        background: $lightgray;
         position: absolute;
         left: 0;
-        top: 5px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
         cursor: pointer;
 
-        &_top {
-          z-index: 5;
-        }
-
-        &::-webkit-slider-runnable-track {
-          height: 4px;
-          margin-top: 7px;
+        &_back {
           background-color: $lightgray;
-        }
-
-        &::-moz-range-track {
-          height: 4px;
-          background-color: $lightgray;
-        }
-
-        &::-webkit-slider-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 4px;
-          height: 20px;
+          pointer-events: none;
+        } 
+        &_front {
           background-color: $hover;
-          margin-top: -8px;
-          position: relative;
-          z-index: 15;
         }
+      }
 
-        &::-moz-range-thumb {
-          -webkit-appearance: none;
-          appearance: none;
-          width: 4px;
-          height: 20px;
-          background-color: $hover;
-          border: none;
-          border-radius: 0;
-          position: relative;
-          z-index: 15;
+      &-thumb {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background-color: $hover;
+        cursor: pointer;
+
+        &_min {
+          left: 0;
+        }
+        &_max {
+          right: 0;
         }
       }
 
       &-values {
         @include flex-space-between;
+        margin-top: -10px;
+        color: $gray;
       }
     }
   }

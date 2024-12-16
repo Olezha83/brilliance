@@ -669,7 +669,6 @@ a {
 .gallery__price-input input {
   font-family: Oswald, sans-serif;
   font-size: 16px;
-  font-family: Oswald, sans-serif;
   width: 65px;
   height: 36px;
   border: 1px solid #8b8c8d;
@@ -680,66 +679,46 @@ a {
   -webkit-appearance: none;
   margin: 0;
 }
-.gallery__price-range {
+.gallery__price-range-slider {
   position: relative;
-  height: 27px;
+  height: 20px;
 }
 .gallery__price-range-fill {
   height: 4px;
-  background: #8a2be2;
-  position: absolute;
-  top: 12px;
-  width: 100%;
-  z-index: 10;
-  pointer-events: none;
-}
-.gallery__price-range-slider {
-  margin: 0;
-  width: 100%;
-  -webkit-appearance: none;
-  appearance: none;
-  background: transparent;
+  background: #e4e4e4;
   position: absolute;
   left: 0;
-  top: 5px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
   cursor: pointer;
 }
-.gallery__price-range-slider_top {
-  z-index: 5;
-}
-.gallery__price-range-slider::-webkit-slider-runnable-track {
-  height: 4px;
-  margin-top: 7px;
+.gallery__price-range-fill_back {
   background-color: #e4e4e4;
+  pointer-events: none;
 }
-.gallery__price-range-slider::-moz-range-track {
-  height: 4px;
-  background-color: #e4e4e4;
-}
-.gallery__price-range-slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 4px;
-  height: 20px;
+.gallery__price-range-fill_front {
   background-color: #8a2be2;
-  margin-top: -8px;
-  position: relative;
-  z-index: 15;
 }
-.gallery__price-range-slider::-moz-range-thumb {
-  -webkit-appearance: none;
-  appearance: none;
+.gallery__price-range-thumb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 4px;
-  height: 20px;
   background-color: #8a2be2;
-  border: none;
-  border-radius: 0;
-  position: relative;
-  z-index: 15;
+  cursor: pointer;
+}
+.gallery__price-range-thumb_min {
+  left: 0;
+}
+.gallery__price-range-thumb_max {
+  right: 0;
 }
 .gallery__price-range-values {
   display: flex;
   justify-content: space-between;
+  margin-top: -10px;
+  color: #8b8c8d;
 }
 .gallery__filters-sort {
   grid-column: span 3;

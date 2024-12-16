@@ -11,70 +11,7 @@ let minValue = gallery
 let maxValue = gallery
   .querySelector('.gallery__price-range-value-max');
 
-// Violet line reference
-const rangeFill = gallery
-  .querySelector('.gallery__price-range-fill');
-
-// Input elements' references
-const inputElements = gallery
-  .querySelectorAll('.gallery__price-range-slider');
-const minInput = inputElements[0]
-const maxInput = inputElements[1]
-
-// Calculate total range width
-const totalRangeWidth = inputElements[0].max - inputElements[0].min
-
-// Set top input range slider
-function mouseMoveHandler (event) {
-  event.offsetX < (this.clientWidth / 2)
-  ? minInput.classList.add('gallery__price-range-slider_top')
-  : minInput.classList.remove('gallery__price-range-slider_top')
-}
-
-inputsContainer.addEventListener('mousemove', mouseMoveHandler)
-
-inputElements.forEach((elem) => {
-  elem.addEventListener('input', () => 
-    inputsContainer.removeEventListener('mousemove', mouseMoveHandler))
-  elem.addEventListener('change', () => 
-    inputsContainer.addEventListener('mousemove', mouseMoveHandler))
-})
-
-// Set min value not bigger then max value
-minInput.addEventListener('input', function () {
-  if (parseInt(minInput.value) > parseInt(maxInput.value)) {
-    minInput.value = `${maxInput.value}`;
-  };
-})
-
-// Set max value not less then min value
-maxInput.addEventListener('input', function () {
-  if (parseInt(maxInput.value) < parseInt(minInput.value)) {
-    maxInput.value = `${minInput.value}`;
-  };
-})
-
-function validateRange() {
-  let minPrice = parseInt(minInput.value);
-  let maxPrice = parseInt(maxInput.value);
-
-  // Update the displayed min and max values
-  minValue.innerText = `${minPrice} грн`;
-  maxValue.innerText = `${maxPrice} грн`;
-
-  // Calculate the percentage positions for min and max values
-  const minPercentage = ((minPrice / totalRangeWidth) * 100);
-  const maxPercentage = ((maxPrice / totalRangeWidth) * 100);
-
-  // Set the position of range color fill
-  rangeFill.style.left = `${minPercentage}%`;
-  rangeFill.style.width = `${maxPercentage - minPercentage}%`;
-};
-
-// Input elements' event listeners
-inputElements.forEach((elem) => {
-  elem.addEventListener('input', validateRange);
-});
-
-// Initial call for validateRange function
-validateRange();
+// Range slider elements' references
+const rangeFill = gallery.querySelector('.gallery__price-range-fill_front')
+const minThumb = gallery.querySelector('.gallery__price-range-thumb_min')
+const maxThumb = gallery.querySelector('.gallery__price-range-thumb_max')

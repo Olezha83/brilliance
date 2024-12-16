@@ -380,7 +380,7 @@
           <div class="gallery">
             <aside class="gallery__filters">
               <form class="gallery__filter">
-                <div class="gallery__filter-type">Цена</div>
+                <h4 class="gallery__filter-type">Цена</h4>
                 <div class="gallery__price-inputs">
                   <div class="gallery__price-input">
                     <input type="number" class="gallery__price-field-min">
@@ -391,25 +391,13 @@
                     <span>грн</span>
                   </div>
                 </div>
-                <div class="gallery__price-range">
-                  <div class="gallery__price-range-fill"></div>
-
-                  <input 
-                    class="gallery__price-range-slider"
-                    type="range"
-                    min="0"
-                    max="39600"
-                    value="0"
-                  />
-
-                  <input 
-                    class="gallery__price-range-slider"
-                    type="range"
-                    min="0"
-                    max="39600"
-                    value="39600"
-                  />
+                <div class="gallery__price-range-slider">
+                  <div class="gallery__price-range-fill gallery__price-range-fill_back"></div>
+                  <div class="gallery__price-range-fill gallery__price-range-fill_front"></div>
+                  <div class="gallery__price-range-thumb gallery__price-range-thumb_min"></div>
+                  <div class="gallery__price-range-thumb gallery__price-range-thumb_max"></div>
                 </div>
+                
                 <div class="gallery__price-range-values">
                   <div class="gallery__price-range-value-min">0 грн</div>
                   <div class="gallery__price-range-value-max">39600 грн</div>
