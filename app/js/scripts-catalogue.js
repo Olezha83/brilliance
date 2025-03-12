@@ -82,8 +82,18 @@ removeFilters.forEach(cross =>
   })
 )
 
+const filtersHeads = Array.from(
+  document.getElementsByClassName('gallery__filter-wrap')
+)
+
+filtersHeads.forEach(head =>
+  head.addEventListener('click', function () {
+    this.lastElementChild.classList.toggle('expand-arrow_rotated')
+    this.nextElementSibling.classList.toggle('hidden')
+  })
+)
 const gallery = document.querySelector('.gallery')
-const inputsContainer = gallery.querySelector('.gallery__price-range')
+const inputsContainer = gallery.querySelector('.gallery__price-range-slider')
 
 // References to price fields
 const minField = gallery.querySelector('.gallery__price-field-min')
@@ -99,6 +109,27 @@ let maxValue = gallery
 const rangeFill = gallery.querySelector('.gallery__price-range-fill_front')
 const minThumb = gallery.querySelector('.gallery__price-range-thumb_min')
 const maxThumb = gallery.querySelector('.gallery__price-range-thumb_max')
+
+// rangeFill.addEventListener('mousemove', e => {
+//   e.stopPropagation()
+//   console.log(e.offsetX)
+// })
+// maxThumb.addEventListener('mousedown', function (event) {
+//   this.style.pointerEvents = 'none';
+//   event.stopPropagation()
+//   console.log(event)
+// })
+
+// maxThumb.addEventListener('mousedown', function(event) {
+//   this.parentElement.addEventListener('mouseover', (e) => {
+//     let firstPoint = e.clientX
+//     if
+//   })
+// })
+
+// maxThumb.addEventListener('mousemove', function(event) {
+//   console.log(event.clientX)
+// })
 const filterType = document.getElementsByClassName('gallery__sort-value')[0];
 const filterList = document.getElementsByClassName('gallery__sort-value-list')[0];
 const sortArrow = document.getElementsByClassName('gallery__sort-arrow')[0];

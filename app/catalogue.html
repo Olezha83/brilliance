@@ -380,7 +380,7 @@
           <div class="gallery">
             <aside class="gallery__filters">
               <form class="gallery__filter">
-                <h4 class="gallery__filter-type">Цена</h4>
+                <h4 class="gallery__filter-head">Цена</h4>
                 <div class="gallery__price-inputs">
                   <div class="gallery__price-input">
                     <input type="number" class="gallery__price-field-min">
@@ -402,568 +402,761 @@
                   <div class="gallery__price-range-value-min">0 грн</div>
                   <div class="gallery__price-range-value-max">39600 грн</div>
                 </div>
-
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Бренд</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="bernadotte">
+                    <label for="bernadotte" class="gallery__filter-label">BERNADOTTE</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Bougucice Ibiza">
+                    <label for="Bougucice Ibiza" class="gallery__filter-label">Bougucice Ibiza</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Brilliance">
+                    <label for="Brilliance" class="gallery__filter-label">Brilliance</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Gipfel">
+                    <label for="Gipfel" class="gallery__filter-label">Gipfel</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Lefard">
+                    <label for="Lefard" class="gallery__filter-label">Lefard</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="L`objet Perlee">
+                    <label for="L`objet Perlee" class="gallery__filter-label">L`objet Perlee</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Lora">
+                    <label for="Lora" class="gallery__filter-label">Lora</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Tescoma">
+                    <label for="Tescoma" class="gallery__filter-label">Tescoma</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Wilmax">
+                    <label for="Wilmax" class="gallery__filter-label">Wilmax</label>
+                  </li>
+                </ul>
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Цвет</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Белый">
+                    <label for="Белый" class="gallery__filter-label">Белый</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Розовый">
+                    <label for="Розовый" class="gallery__filter-label">Розовый</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Голубой">
+                    <label for="Голубой" class="gallery__filter-label">Голубой</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Слоновая кость">
+                    <label for="Слоновая кость" class="gallery__filter-label">Слоновая кость</label>
+                  </li>
+                </ul>
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Количество предметов в наборе</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-2">
+                    <label for="pred-2" class="gallery__filter-label">2</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-4">
+                    <label for="pred-4" class="gallery__filter-label">4</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-6">
+                    <label for="pred-6" class="gallery__filter-label">6</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-9">
+                    <label for="pred-9" class="gallery__filter-label">9</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-12">
+                    <label for="pred-12" class="gallery__filter-label">12</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-13">
+                    <label for="pred-13" class="gallery__filter-label">13</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-14">
+                    <label for="pred-14" class="gallery__filter-label">14</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-15">
+                    <label for="pred-15" class="gallery__filter-label">15</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pred-35">
+                    <label for="pred-35" class="gallery__filter-label">35</label>
+                  </li>
+                </ul>
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Количество персон</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pers-1">
+                    <label for="pers-1" class="gallery__filter-label">1</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pers-2">
+                    <label for="pers-2" class="gallery__filter-label">2</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="pers-6">
+                    <label for="pers-6" class="gallery__filter-label">6</label>
+                  </li>
+                </ul>
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Тип чашки</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Чайные">
+                    <label for="Чайные" class="gallery__filter-label">Чайные</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Кофейные">
+                    <label for="Кофейные" class="gallery__filter-label">Кофейные</label>
+                  </li>
+                </ul>
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Страна-производитель</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Германия">
+                    <label for="Германия" class="gallery__filter-label">Германия</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Китай">
+                    <label for="Китай" class="gallery__filter-label">Китай</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Польша">
+                    <label for="Польша" class="gallery__filter-label">Польша</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Португалия">
+                    <label for="Португалия" class="gallery__filter-label">Португалия</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Чехия">
+                    <label for="Чехия" class="gallery__filter-label">Чехия</label>
+                  </li>
+                </ul>
+              </form>
+              <form class="gallery__filter">
+                <div class="gallery__filter-wrap">
+                  <h4 class="gallery__filter-head">Материал</h4>
+                  <div class="gallery__filter-arrow expand-arrow expand-arrow_rotated"></div>
+                </div>
+                <ul class="gallery__filter-list">
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Фарфор">
+                    <label for="Фарфор" class="gallery__filter-label">Фарфор</label>
+                  </li>
+                  <li class="gallery__filter-list-item">
+                    <input type="checkbox" class="gallery__filter-checkbox" id="Стекло">
+                    <label for="Стекло" class="gallery__filter-label">Стекло</label>
+                  </li>
+                </ul>
               </form>
             </aside>
             <div class="gallery__head">
               <div class="structure-path">Главная / Чайная и кофейная посуда / Чайные и кофейные наборы</div>
               <h2 class="section-title_left">Чайные и кофейные наборы</h2>
             </div>
-            <div class="gallery__filters-sort">
-              <div class="gallery__filters-on">
-                <div class="gallery__filter-on">
-                  <span class="gallery__filter-applied">Белый</span>
-                  <span class="gallery__remove-filter"></span>
+            <div class="gallery__wrap">
+              <div class="gallery__filters-sort">
+                <div class="gallery__filters-on">
+                  <div class="gallery__filter-on">
+                    <span class="gallery__filter-applied">Белый</span>
+                    <span class="gallery__remove-filter"></span>
+                  </div>
+                </div>
+                <div class="gallery__sort">
+                  <div class="gallery__sort-order">Сортировать по:</div>       
+                  <div class="gallery__sort-value">
+                    <span class="gallery__sort-value-text"></span>
+                    <div class="gallery__sort-arrow expand-arrow"></div>
+                    <ul class="gallery__sort-value-list">
+                      <li class="
+                        gallery__sort-value-item
+                        gallery__sort-value-item_selected
+                      ">Популярности</li>
+                      <li class="gallery__sort-value-item">По цене по убыванию</li>
+                      <li class="gallery__sort-value-item">По цене по возрастанию</li>
+                      <li class="gallery__sort-value-item">По названию А-Я</li>
+                      <li class="gallery__sort-value-item">По названию Я-А</li>
+                    </ul>
+                  </div>        
                 </div>
               </div>
-              <div class="gallery__sort">
-                <div class="gallery__sort-order">Сортировать по:</div>       
-                <div class="gallery__sort-value">
-                  <span class="gallery__sort-value-text"></span>
-                  <div class="gallery__sort-arrow expand-arrow expand-arrow_dark"></div>
-                  <ul class="gallery__sort-value-list">
-                    <li class="
-                      gallery__sort-value-item
-                      gallery__sort-value-item_selected
-                    ">Популярности</li>
-                    <li class="gallery__sort-value-item">По цене по убыванию</li>
-                    <li class="gallery__sort-value-item">По цене по возрастанию</li>
-                    <li class="gallery__sort-value-item">По названию А-Я</li>
-                    <li class="gallery__sort-value-item">По названию Я-А</li>
-                  </ul>
-                </div>        
+              <div class="gallery__goods">
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_01.webp"
+                    alt="Кофейный набор 12 предметов Lefard"
+                  />
+                  <div class="card__name">
+                    Кофейный набор 12 предметов Lefard
+                  </div>
+                  <div class="card__price">1400 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_02.webp"
+                    alt="Сервиз чайный Gipfel Argento 15 предметов"
+                  />
+                  <div class="card__name">
+                    Сервиз чайный Gipfel Argento 15 предметов
+                  </div>
+                  <div class="card__price">12098 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_03.webp"
+                    alt="Чайный набор Lefard Вивьен 15 предметов"
+                  />
+                  <div class="card__name">
+                    Чайный набор Lefard Вивьен 15 предметов
+                  </div>
+                  <div class="card__price">3199 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_04.webp"
+                    alt="Кофейный набор Lefard White, 12 предметов"
+                  />
+                  <div class="card__name">
+                    Кофейный набор Lefard White, 12 предметов
+                  </div>
+                  <div class="card__price">990 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_05.webp"
+                    alt="Чайный набор Lefard 12 предметов"
+                  />
+                  <div class="card__name">
+                    Чайный набор Lefard 12 предметов
+                  </div>
+                  <div class="card__price">1799 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_06.webp"
+                    alt="Кофейный набор Lefard Коты, 12 предметов"
+                  />
+                  <div class="card__name">
+                    Кофейный набор Lefard Коты, 12 предметов
+                  </div>
+                  <div class="card__price">1231 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_07.webp"
+                    alt="Кофейный набор Lefard Белоснежка, 12 предметов"
+                  />
+                  <div class="card__name">
+                    Кофейный набор Lefard Белоснежка, 12 предметов
+                  </div>
+                  <div class="card__price">800 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_08.webp"
+                    alt="Кофейный набор Wilmax Julia Vysotskaya 12 предметов"
+                  />
+                  <div class="card__name">
+                    Кофейный набор Wilmax Julia Vysotskaya 12 предметов
+                  </div>
+                  <div class="card__price">1250 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_09.webp"
+                    alt="Кофейный набор Lefard Pudra 4 предмета"
+                  />
+                  <div class="card__name">
+                    Кофейный набор Lefard Pudra 4 предмета
+                  </div>
+                  <div class="card__price">404 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_10.webp"
+                    alt="Чайный набор Lora 15 предметов"
+                  />
+                  <div class="card__name">
+                    Чайный набор Lora 15 предметов
+                  </div>
+                  <div class="card__price">2999 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_11.webp"
+                    alt="Сервиз кофейный Tescoma myCOFFEE с блюдцем 6 шт"
+                  />
+                  <div class="card__name">
+                    Сервиз кофейный Tescoma myCOFFEE с блюдцем 6 шт
+                  </div>
+                  <div class="card__price">1400 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_12.webp"
+                    alt="Сервиз столовый Brilliance 12 предметов"
+                  />
+                  <div class="card__name">
+                    Сервиз столовый Brilliance 12 предметов
+                  </div>
+                  <div class="card__price">6300 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_13.webp"
+                    alt="Чайный набор Lefard Ажур 14 предметов"
+                  />
+                  <div class="card__name">
+                    Чайный набор Lefard Ажур 14 предметов
+                  </div>
+                  <div class="card__price">1430 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_14.webp"
+                    alt="Сервиз чайный фарфоровый на 12 персон Bougucice Ibiza"
+                  />
+                  <div class="card__name">
+                    Сервиз чайный фарфоровый на 12 персон Bougucice Ibiza
+                  </div>
+                  <div class="card__price">10020 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_15.webp"
+                    alt="Столовый сервиз Lora на 6 персон фарфор"
+                  />
+                  <div class="card__name">
+                    Столовый сервиз Lora на 6 персон фарфор
+                  </div>
+                  <div class="card__price">6990 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_16.webp"
+                    alt="Чайный набор Lefard Мелания 14 предметов"
+                  />
+                  <div class="card__name">
+                      Чайный набор Lefard Мелания 14 предметов
+                  </div>
+                  <div class="card__price">3759 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_17.webp"
+                    alt="Чайный набор на подставке 9 предметов Lefard"
+                  />
+                  <div class="card__name">
+                    Чайный набор на подставке 9 предметов Lefard
+                  </div>
+                  <div class="card__price">3110 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_18.webp"
+                    alt="Чайный набор Lefard бамбук 13 предметов"
+                  />
+                  <div class="card__name">
+                    Чайный набор Lefard бамбук 13 предметов
+                  </div>
+                  <div class="card__price">1700 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_19.webp"
+                    alt="Чашка кофейная и блюдце Wilmax"
+                  />
+                  <div class="card__name">
+                    Чашка кофейная и блюдце Wilmax
+                  </div>
+                  <div class="card__price">120 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_20.webp"
+                    alt="Чайный набор Lefard Волна"
+                  />
+                  <div class="card__name">
+                    Чайный набор Lefard Волна
+                  </div>
+                  <div class="card__price">2800 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_21.webp"
+                    alt="Чайный сервиз на 6 персон 15 предметов"
+                  />
+                  <div class="card__name">
+                    Чайный сервиз на 6 персон 15 предметов
+                  </div>
+                  <div class="card__price">3700 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_22.webp"
+                    alt="Чашка кофейная и блюдце Wilmax"
+                  />
+                  <div class="card__name">
+                    Чашка кофейная и блюдце Wilmax
+                  </div>
+                  <div class="card__price">135 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_23.webp"
+                    alt="L'Objet Perlee Набор Чашка для эспрессо и блюдце 6 шт."
+                  />
+                  <div class="card__name">
+                    L'Objet Perlee Набор Чашка для эспрессо и блюдце 6 шт.
+                  </div>
+                  <div class="card__price">39600 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+                <a href="#" class="card">
+                  <img
+                    class="card__img"
+                    src="./img/gallery/gallery_24.webp"
+                    alt="BERNADOTTE, Чайный набор золотая полоса, THUN"
+                  />
+                  <div class="card__name">
+                    BERNADOTTE, Чайный набор золотая полоса, THUN
+                  </div>
+                  <div class="card__price">9438 грн</div>
+                  <svg
+                    class="icon add-to-fav-icon"
+                    viewBox="0 0 24 22"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      class="add-to-fav-path"
+                      d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
+                    />
+                  </svg>
+                  <div class="buy-btn">Купить</div>
+                </a>
+  
               </div>
-            </div>
-            <div class="gallery__goods">
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_01.webp"
-                  alt="Кофейный набор 12 предметов Lefard"
-                />
-                <div class="card__name">
-                  Кофейный набор 12 предметов Lefard
-                </div>
-                <div class="card__price">1400 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_02.webp"
-                  alt="Сервиз чайный Gipfel Argento 15 предметов"
-                />
-                <div class="card__name">
-                  Сервиз чайный Gipfel Argento 15 предметов
-                </div>
-                <div class="card__price">12098 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_03.webp"
-                  alt="Чайный набор Lefard Вивьен 15 предметов"
-                />
-                <div class="card__name">
-                  Чайный набор Lefard Вивьен 15 предметов
-                </div>
-                <div class="card__price">3199 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_04.webp"
-                  alt="Кофейный набор Lefard White, 12 предметов"
-                />
-                <div class="card__name">
-                  Кофейный набор Lefard White, 12 предметов
-                </div>
-                <div class="card__price">990 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_05.webp"
-                  alt="Чайный набор Lefard 12 предметов"
-                />
-                <div class="card__name">
-                  Чайный набор Lefard 12 предметов
-                </div>
-                <div class="card__price">1799 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_06.webp"
-                  alt="Кофейный набор Lefard Коты, 12 предметов"
-                />
-                <div class="card__name">
-                  Кофейный набор Lefard Коты, 12 предметов
-                </div>
-                <div class="card__price">1231 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_07.webp"
-                  alt="Кофейный набор Lefard Белоснежка, 12 предметов"
-                />
-                <div class="card__name">
-                  Кофейный набор Lefard Белоснежка, 12 предметов
-                </div>
-                <div class="card__price">800 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_08.webp"
-                  alt="Кофейный набор Wilmax Julia Vysotskaya 12 предметов"
-                />
-                <div class="card__name">
-                  Кофейный набор Wilmax Julia Vysotskaya 12 предметов
-                </div>
-                <div class="card__price">1250 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_09.webp"
-                  alt="Кофейный набор Lefard Pudra 4 предмета"
-                />
-                <div class="card__name">
-                  Кофейный набор Lefard Pudra 4 предмета
-                </div>
-                <div class="card__price">404 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_10.webp"
-                  alt="Чайный набор Lora 15 предметов"
-                />
-                <div class="card__name">
-                  Чайный набор Lora 15 предметов
-                </div>
-                <div class="card__price">2999 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_11.webp"
-                  alt="Сервиз кофейный Tescoma myCOFFEE с блюдцем 6 шт"
-                />
-                <div class="card__name">
-                  Сервиз кофейный Tescoma myCOFFEE с блюдцем 6 шт
-                </div>
-                <div class="card__price">1400 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_12.webp"
-                  alt="Сервиз столовый Brilliance 12 предметов"
-                />
-                <div class="card__name">
-                  Сервиз столовый Brilliance 12 предметов
-                </div>
-                <div class="card__price">6300 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_13.webp"
-                  alt="Чайный набор Lefard Ажур 14 предметов"
-                />
-                <div class="card__name">
-                  Чайный набор Lefard Ажур 14 предметов
-                </div>
-                <div class="card__price">1430 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_14.webp"
-                  alt="Сервиз чайный фарфоровый на 12 персон Bougucice Ibiza"
-                />
-                <div class="card__name">
-                  Сервиз чайный фарфоровый на 12 персон Bougucice Ibiza
-                </div>
-                <div class="card__price">10020 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_15.webp"
-                  alt="Столовый сервиз Lora на 6 персон фарфор"
-                />
-                <div class="card__name">
-                  Столовый сервиз Lora на 6 персон фарфор
-                </div>
-                <div class="card__price">6990 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_16.webp"
-                  alt="Чайный набор Lefard Мелания 14 предметов"
-                />
-                <div class="card__name">
-                    Чайный набор Lefard Мелания 14 предметов
-                </div>
-                <div class="card__price">3759 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_17.webp"
-                  alt="Чайный набор на подставке 9 предметов Lefard"
-                />
-                <div class="card__name">
-                  Чайный набор на подставке 9 предметов Lefard
-                </div>
-                <div class="card__price">3110 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_18.webp"
-                  alt="Чайный набор Lefard бамбук 13 предметов"
-                />
-                <div class="card__name">
-                  Чайный набор Lefard бамбук 13 предметов
-                </div>
-                <div class="card__price">1700 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_19.webp"
-                  alt="Чашка кофейная и блюдце Wilmax"
-                />
-                <div class="card__name">
-                  Чашка кофейная и блюдце Wilmax
-                </div>
-                <div class="card__price">120 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_20.webp"
-                  alt="Чайный набор Lefard Волна"
-                />
-                <div class="card__name">
-                  Чайный набор Lefard Волна
-                </div>
-                <div class="card__price">2800 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_21.webp"
-                  alt="Чайный сервиз на 6 персон 15 предметов"
-                />
-                <div class="card__name">
-                  Чайный сервиз на 6 персон 15 предметов
-                </div>
-                <div class="card__price">3700 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_22.webp"
-                  alt="Чашка кофейная и блюдце Wilmax"
-                />
-                <div class="card__name">
-                  Чашка кофейная и блюдце Wilmax
-                </div>
-                <div class="card__price">135 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_23.webp"
-                  alt="L'Objet Perlee Набор Чашка для эспрессо и блюдце 6 шт."
-                />
-                <div class="card__name">
-                  L'Objet Perlee Набор Чашка для эспрессо и блюдце 6 шт.
-                </div>
-                <div class="card__price">39600 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-              <a href="#" class="card">
-                <img
-                  class="card__img"
-                  src="./img/gallery/gallery_24.webp"
-                  alt="BERNADOTTE, Чайный набор золотая полоса, THUN"
-                />
-                <div class="card__name">
-                  BERNADOTTE, Чайный набор золотая полоса, THUN
-                </div>
-                <div class="card__price">9438 грн</div>
-                <svg
-                  class="icon add-to-fav-icon"
-                  viewBox="0 0 24 22"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    class="add-to-fav-path"
-                    d="M21.3036 2.76815C20.766 2.20759 20.1278 1.76292 19.4253 1.45954C18.7228 1.15615 17.9699 1 17.2095 1C16.4491 1 15.6961 1.15615 14.9936 1.45954C14.2912 1.76292 13.6529 2.20759 13.1153 2.76815L11.9997 3.93095L10.8841 2.76815C9.79827 1.6364 8.32556 1.00059 6.78997 1.00059C5.25437 1.00059 3.78167 1.6364 2.69584 2.76815C1.61001 3.89989 1 5.43487 1 7.03541C1 8.63594 1.61001 10.1709 2.69584 11.3027L3.81147 12.4655L11.9997 21L20.188 12.4655L21.3036 11.3027C21.8414 10.7424 22.268 10.0771 22.5591 9.34495C22.8502 8.61276 23 7.82796 23 7.03541C23 6.24285 22.8502 5.45806 22.5591 4.72587C22.268 3.99368 21.8414 3.32844 21.3036 2.76815Z"
-                  />
-                </svg>
-                <div class="buy-btn">Купить</div>
-              </a>
-
             </div>
           </div>
         </div>

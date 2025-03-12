@@ -1,5 +1,5 @@
 const gallery = document.querySelector('.gallery')
-const inputsContainer = gallery.querySelector('.gallery__price-range')
+const inputsContainer = gallery.querySelector('.gallery__price-range-slider')
 
 // References to price fields
 const minField = gallery.querySelector('.gallery__price-field-min')

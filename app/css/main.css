@@ -117,6 +117,10 @@ a {
   margin-bottom: 51px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* COMPONENTS */
 /* icon */
 .icon {
@@ -643,10 +647,18 @@ a {
 .gallery__filters {
   grid-column: 1;
   grid-row: 2/4;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 .gallery__head {
   grid-column: 2/5;
   padding-bottom: 45px;
+}
+.gallery__wrap {
+  grid-column: 2/5;
+  display: grid;
+  grid-template-columns: subgrid;
 }
 .gallery__goods {
   grid-column: span 3;
@@ -660,6 +672,56 @@ a {
   flex-direction: column;
   gap: 15px;
   color: #141416;
+}
+.gallery__filter-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  cursor: pointer;
+  user-select: none;
+}
+.gallery__filter-head {
+  font-weight: 500;
+  flex: 1;
+}
+.gallery__filter-arrow {
+  flex: 0;
+  margin-top: 10px;
+}
+.gallery__filter-checkbox {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  appearance: none;
+}
+.gallery__filter-checkbox:checked + .gallery__filter-label::before {
+  content: url(../img/gallery/checkmark.png);
+}
+.gallery__filter-checkbox:hover + .gallery__filter-label::before {
+  border-color: #626264;
+}
+.gallery__filter-label {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-left: 15px;
+}
+.gallery__filter-label::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -24px;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #8b8c8d;
+}
+.gallery__filter-list-item {
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.gallery__filter-list-item + .gallery__filter-list-item {
+  margin-top: 15px;
 }
 .gallery__price-inputs {
   display: flex;
@@ -682,6 +744,7 @@ a {
 .gallery__price-range-slider {
   position: relative;
   height: 20px;
+  cursor: pointer;
 }
 .gallery__price-range-fill {
   height: 4px;
