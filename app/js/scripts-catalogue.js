@@ -72,6 +72,43 @@ menuExtraHrefs.forEach((menuItem) => {
   window.addEventListener(event, openSubMenuItem);
 });
 
+const filtersInputs = Array.from(
+  document.getElementsByClassName('gallery__filter-checkbox')
+)
+const filtersApplied = document
+  .getElementsByClassName('gallery__filters-on')[0]
+
+function createFilter(name) {
+  const filterWrap = document.createElement('div')
+  filterWrap.classList.add('gallery__filter-on')
+
+  const filterName = document.createElement('span')
+  filterName.classList.add('gallery__filter-applied')
+  filterName.innerText = name
+
+  const removeCross = document.createElement('span')
+  removeCross.classList.add('gallery__remove-filter')
+
+  filterWrap.append(filterName, removeCross)
+
+  return filterWrap
+}
+
+const filterElements = {}
+
+filtersInputs.forEach(input => input.addEventListener('change', function() {
+  const labelText = input.nextElementSibling.innerText
+  if (input.checked) {
+    const newElem = filtersApplied.appendChild(createFilter(labelText))
+    filterElements[input.id] = newElem
+  } else {
+    const newElem = filterElements[input.id]
+    if (newElem) {
+      filtersApplied.removeChild(newElem)
+      delete filterElements[input.id]
+    }
+  }
+}))
 const removeFilters = Array.from(
   document.getElementsByClassName('gallery__remove-filter')
 )
@@ -109,27 +146,6 @@ let maxValue = gallery
 const rangeFill = gallery.querySelector('.gallery__price-range-fill_front')
 const minThumb = gallery.querySelector('.gallery__price-range-thumb_min')
 const maxThumb = gallery.querySelector('.gallery__price-range-thumb_max')
-
-// rangeFill.addEventListener('mousemove', e => {
-//   e.stopPropagation()
-//   console.log(e.offsetX)
-// })
-// maxThumb.addEventListener('mousedown', function (event) {
-//   this.style.pointerEvents = 'none';
-//   event.stopPropagation()
-//   console.log(event)
-// })
-
-// maxThumb.addEventListener('mousedown', function(event) {
-//   this.parentElement.addEventListener('mouseover', (e) => {
-//     let firstPoint = e.clientX
-//     if
-//   })
-// })
-
-// maxThumb.addEventListener('mousemove', function(event) {
-//   console.log(event.clientX)
-// })
 const filterType = document.getElementsByClassName('gallery__sort-value')[0];
 const filterList = document.getElementsByClassName('gallery__sort-value-list')[0];
 const sortArrow = document.getElementsByClassName('gallery__sort-arrow')[0];
