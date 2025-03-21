@@ -27,11 +27,15 @@ filtersInputs.forEach(input => input.addEventListener('change', function() {
   if (input.checked) {
     const newElem = filtersApplied.appendChild(createFilter(labelText))
     filterElements[input.id] = newElem
+    newElem.lastElementChild.addEventListener('click', function () {
+      newElem.remove()
+      input.checked = false
+      delete filterElements[input.id]
+    })
+
   } else {
     const newElem = filterElements[input.id]
-    if (newElem) {
-      filtersApplied.removeChild(newElem)
-      delete filterElements[input.id]
-    }
+    filtersApplied.removeChild(newElem)
+    delete filterElements[input.id]
   }
 }))
