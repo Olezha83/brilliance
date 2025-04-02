@@ -22,10 +22,61 @@ function createFilter(name) {
   return filterWrap
 }
 
+function defineEndingPredmet(number) {
+  const lastDigit = +number.charAt(number.length - 1)
+  if (
+    +number >= 10 && +number <= 19 || 
+    lastDigit === 0 ||
+    lastDigit >= 5 && lastDigit <= 9
+  ) {
+    return 'ов'
+  }
+
+  if (lastDigit === 1) {
+    return ''
+  } 
+
+  if (lastDigit > 1 && lastDigit < 5) {
+    return 'а'
+  }
+}
+  
+function defineEndingPerson(number) {
+  const lastDigit = +number.charAt(number.length - 1)
+  if (
+    +number >= 10 && +number <= 19 ||
+    lastDigit === 0 ||
+    lastDigit >= 5 && lastDigit <= 9
+  ) {
+    return ''
+  }
+  
+  if (lastDigit === 1) {
+    return 'а'
+  } 
+  
+  if (lastDigit > 1 && lastDigit < 5) {
+    return 'ы'
+  } 
+}
+  
 const filterElements = {}
 
 filtersInputs.forEach(input => input.addEventListener('change', function() {
-  const labelText = input.nextElementSibling.innerText
+  let labelText
+
+  if (input.dataset.type === 'предмет') {
+    const text = input.nextElementSibling.innerText
+    const properEnding = defineEndingPredmet(text)
+    labelText = text + ' ' + input.dataset.type + properEnding
+  } else if (input.dataset.type === 'персон') {
+    const text = input.nextElementSibling.innerText
+    const properEnding = defineEndingPerson(text)
+    labelText = text + ' ' + input.dataset.type + properEnding
+  } else {
+    labelText = input.nextElementSibling.innerText
+  }
+
   if (input.checked) {
     Object.keys(filterElements).length === 0 && 
       removeAllFiltersBtn.classList.remove('hidden')
